@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--Custom Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="CastoProject2.css" >
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" >
 
     <!--Social media og -->
     <meta property="og:type" content="website" />
@@ -23,7 +23,9 @@
           content="Welcome to Savannah Casto's portfolio. I'm a recent college graduate with a passion for data analytics." />
 
     <!--Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/fontawesome.min.js"></script>
+
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -31,23 +33,26 @@
     <!--Iconify -->
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
 
+    <!--Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+  </head>
 
   <body>
     	<!-- Navbar information -->
-      <div class="container.fluid">
-        <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm fixed-top">
           <!-- Toggler/collapsibe Button -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar">
-            <span class="navbar-toggler-icon">S. Casto</span>
-          </button>
+          <div class="me-auto">
+            <a class="navbar-brand" href="#page-top">Home</a>
+            <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="#navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
           <!-- Button Class & Setup -->
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav">
-              <!-- Home button -->
-              <li class="nav-item">
-                <a class="nav-link" href="#page-top">Home</a>
-              </li>
+          <div class="navbar-collapse w-100 collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
               <!-- About Me button -->
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -75,7 +80,7 @@
 
   <!-- Landing header information -->
 
-  <header class="masthead">
+  <header class="masthead" id="page-top">
     <div class="textlanding">
       <title>SAVANNAH CASTO</title>
       <br>
@@ -117,7 +122,7 @@
   <!-- About me information -->
   <section id="about">
     <div class="container">
-      <h2>Who I am</h2>
+      <h2 class="text-center">Who I am</h2>
       <div class="row">
         <div class="col">
 
@@ -134,40 +139,43 @@
   <!-- Projects information -->
   <section id="projects">
     <div class="container">
-      <h2>Projects</h2>
-      <p>A few of my projects</p>
+      <div class="text-center">
+        <h2 class="heading">Projects</h2>
+        <p class="subheading">A few of my projects</p>
 
-      <!-- Board game EDA project -->
-      <div class="portfolio-items">
-        <div class="col-md-3 col-sm-6">
-          <a class="project-link" data-toggle="modal" href="#boardGameKaggle">
-            <div class="project-hover">
-              <div class="project-hover-content">
-                <p>Board Game Rating Analysis</p>
-                <hr>
-                <p class="explanation_portfolio">Exploratory data analysis of board game ratings using python<br></p>
+        <!-- Projects items -->
+        <div class="project-items">
+
+          <!-- Board game EDA project -->
+          <div class="col-md-3 col-sm-6">
+            <a class="project-link" data-toggle="modal" href="#boardGameKaggle">
+              <div class="project-hover">
+                <div class="project-hover-content">
+                  <p>Board Game Rating Analysis</p>
+                  <p class="explanation">Exploratory data analysis of board game ratings using python<br></p>
+                </div>
               </div>
-            </div>
-            <img class="img-fluid" src="" alt="">
-          </a>
+              <img class="img-fluid" src="" alt="">
+            </a>
+          </div>
+
+          <!-- Portfolio website project -->
+          <div class="col-md-3 col-sm-6">
+            <a class="project-link" data-toggle="modal" href="#websiteGithub">
+              <div class="project-hover">
+                <div class="project-hover-content">
+                  <p>Portfolio Website</p>
+                  <p class="explanation">A single page portfolio website hosted on Github pages.<br></p>
+                </div>
+              </div>
+              <img class="img-fluid" src="" alt="">
+            </a>
+          </div>
+
         </div>
       </div>
 
-      <!-- Portfolio website project -->
-      <div class="portfolio-items">
-        <div class="col-md-3 col-sm-6">
-          <a class="project-link" data-toggle="modal" href="#websiteGithub">
-            <div class="project-hover">
-              <div class="project-hover-content">
-                <p>Portfolio Website</p>
-                <hr>
-                <p class="explanation_portfolio">A single page portfolio website hosted on Github pages.<br></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="" alt="">
-          </a>
-        </div>
-      </div>
+
 
     </div>
   </section>
@@ -175,8 +183,10 @@
   <!-- Certificates information -->
   <section id="certificates">
     <div class="container">
-      <h2>Certifications</h2>
-      <p>The certificates that I've received.</p>
+      <div class="text-center text-md-left">
+        <h2>Certifications</h2>
+        <p>The certificates that I've received.</p>
+      </div>
     </div>
   </section>
 
@@ -190,3 +200,4 @@
 
 
 </body>
+</html>
