@@ -59,6 +59,13 @@ section p.subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+header {
+  padding-top: 7em;
+  padding-bottom: 2em;
+  background-color: var(--lightblue);
+  font-size: 16px;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 /*Navbar*/
 
