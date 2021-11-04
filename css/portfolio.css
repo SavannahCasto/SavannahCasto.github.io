@@ -114,3 +114,26 @@ i.fab:hover {
   font-size: 24px;
 }
 
+/*Projects*/
+.project-item{
+  background-color: white;
+  margin: 7px;
+  padding: 0px;
+}
+
+.project-title {
+  padding-top: 1em
+}
+
+.project-item:hover {
+  background-color: var(--lightblue);
+}
+
+.project-link{
+  display:block;top:0;right:0;bottom:0;left:0;
+}
+
+.project-item a{
+  text-decoration: none;
+}
+
