@@ -154,3 +154,9 @@ i.fab:hover {
   text-decoration: none;
 }
 
+/*Images*/
+.picture {
+  max-height: 400px;
+  margin: auto;
+    display: block;
+}
