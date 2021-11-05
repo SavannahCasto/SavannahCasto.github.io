@@ -154,11 +154,6 @@ i.fab:hover {
   text-decoration: none;
 }
 
-@media (min-width: 767px) {
-  .project-item {
-    margin: 0px;
-  }
-}
 
 /*Images*/
 .picture {
