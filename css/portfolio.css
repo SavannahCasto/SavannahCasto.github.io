@@ -140,6 +140,8 @@ i.fab:hover {
   padding-top: 1em
 }
 
+.project-body {
+  padding: 16px;
 }
 
 .project-link{
