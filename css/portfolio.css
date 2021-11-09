@@ -132,10 +132,8 @@ i.fab:hover {
 }
 
 /*Projects*/
-.project-item{
+.project-content{
   background-color: white;
-  margin: 7px;
-  padding: 0px;
 }
 
 .project-title {
