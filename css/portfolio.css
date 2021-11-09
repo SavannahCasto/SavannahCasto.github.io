@@ -144,6 +144,10 @@ i.fab:hover {
   padding: 16px;
 }
 
+.project-header {
+  padding: 16px;
+  border-bottom: 1px;
+  border-color: var (--darkgrey)
 }
 
 .project-item a{
