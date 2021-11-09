@@ -140,8 +140,6 @@ i.fab:hover {
   padding-top: 1em
 }
 
-.project-item:hover {
-  background-color: var(--lightblue);
 }
 
 .project-link{
