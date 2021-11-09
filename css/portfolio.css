@@ -150,10 +150,6 @@ i.fab:hover {
   border-color: var (--darkgrey)
 }
 
-.project-item a{
-  text-decoration: none;
-}
-
 
 /*Images*/
 .picture {
